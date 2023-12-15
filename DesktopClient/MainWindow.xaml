@@ -1,0 +1,25 @@
+﻿<Window x:Class="DesktopClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DesktopClient"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="793*"/>
+            <ColumnDefinition Width="7*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox AcceptsReturn="True" VerticalScrollBarVisibility="Visible" x:Name="CodeTextBox" HorizontalAlignment="Left" Margin="11,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" Height="224" FontFamily="Cascadia Code"/>
+        <TextBox x:Name="ResultTextBox"  VerticalScrollBarVisibility="Visible" HorizontalAlignment="Left" Margin="405,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="368" Height="224" FontFamily="Cascadia Code" IsEnabled="False"/>
+        <Button x:Name="RunJob" Content="Run Job" HorizontalAlignment="Left" Margin="10,345,0,0" VerticalAlignment="Top" Width="136" Height="34" Click="Button_Click"/>
+        <Label x:Name="CompletedTextBox" Content="Completed Jobs: 0" HorizontalAlignment="Left" Margin="212,11,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.605,0.618" Width="110"/>
+        <Label x:Name="OngoingTextBox" Content="Ongoing Jobs: 0" HorizontalAlignment="Left" Margin="97,11,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.605,0.618" Width="110"/>
+        <Label Content="Executed Result" HorizontalAlignment="Left" Margin="405,73,0,0" VerticalAlignment="Top"/>
+        <Label Content="Python Code to Execute" HorizontalAlignment="Left" Margin="11,73,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="ConnectedPort" Content="Connected Port:" HorizontalAlignment="Left" Margin="637,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.605,0.618" Width="136"/>
+        <Label x:Name="QueuedTextBox" Content="Queued: 0" HorizontalAlignment="Left" Margin="10,11,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.605,0.618" Width="82"/>
+        <Button x:Name="InfoBtn" Content="Usage Info" HorizontalAlignment="Left" Margin="688,378,0,0" VerticalAlignment="Top" Width="85" Click="InfoBtn_Click"/>
+    </Grid>
+</Window>
